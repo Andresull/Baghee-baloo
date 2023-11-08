@@ -1,0 +1,19 @@
+*{
+  margin: px;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.card-1{
+  width: 100px;
+  height: 1px;
+  left:200px;
+  position: relative;
+
+}
+.card-2{
+  width: 100px;
+  height: 1px;
+  left:820px;
+   position: relative;
+}

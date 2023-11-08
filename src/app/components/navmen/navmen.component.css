@@ -1,0 +1,32 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar-brand {
+  color: #dcdcdc;
+  font-size: 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.navbar-nav .nav-item .active .nav-link, .navbar-nav .nav-item .nav-link:hover {
+  color: #87e6ef;
+}
+
+.navbar-toggler-icon {
+  color: #2626d0;
+}
+
+/*botton REGISTRATE*/
+.btn-secondary {
+  background-color: #044b67; /* Cambiar este valor para el color de fondo deseado */
+  color: #ffffff; /* Cambiar este valor para el color del texto deseado */
+ }

@@ -1,0 +1,39 @@
+
+<div>
+  <h1>Consulta sisbanca</h1>
+  <label for="documento">Número de documento: </label>
+   <input type="text" id="documento" [(ngModel)]="documento">
+  <button (click)="searchSisben()">Buscar</button>
+  <div *ngIf="mensaje">{{ mensaje }}</div>
+
+  <div *ngIf="modeloPersona">
+  <h6>Información Sisben</h6>
+    <p>Nombre: {{ this.modeloPersona.priNombre }} {{ this.modeloPersona.segNombre }}</p>
+    <p>apellido:{{this.modeloPersona.priApellido}} {{this.modeloPersona.segApellido}}</p>
+    <p> Tipo de documento: {{this.modeloPersona.numeroCuenta }}</p>
+  </div>
+
+
+
+
+
+  <div *ngIf="bancarizadoData">
+    <h2>Información Bancarizado</h2>
+    <p>Daviplata: {{ bancarizadoData.Daviplata }}</p>
+    <p>Powwi: {{ bancarizadoData.Powwi }}</p>
+    <p>Dale: {{ bancarizadoData.Dale }}</p>
+    <p>Movii: {{ bancarizadoData.Movii }}</p>
+    <p>Nequi: {{ bancarizadoData.Nequi }}</p>
+    <p>Bancolombia a la mano: {{ bancarizadoData.Alm }}</p>
+  </div>
+
+  <!-- <div *ngIf="!(sisbenData || bancarizadoData) && mensaje === '' && (sisbenData !== null || bancarizadoData !== null)">
+    <p>No se encontraron datos asociados al documento.</p>
+</div> -->
+
+
+
+
+
+
+
